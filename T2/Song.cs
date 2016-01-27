@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace T2
 {
-    class CD
+    class Song
     {
         public string Name { get; set; }
-        public string Artist { get; set; }
-        public string Song { get; set; }
+        public string Duration { get; set; }
 
+
+        public override string ToString()
+        {
+            return Name + ", " + Duration;
+        }
     }
 }
